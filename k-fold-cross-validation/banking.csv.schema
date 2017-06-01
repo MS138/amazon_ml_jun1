@@ -1,94 +1,190 @@
 {
-    "excludedAttributeNames": [],
-    "version": "1.0",
-    "dataFormat": "CSV",
-    "rowId": null,
-    "dataFileContainsHeader": true,
-    "attributes": [
-        {
-            "attributeName": "age",
-            "attributeType": "NUMERIC"
-        },
-        {
-            "attributeName": "job",
-            "attributeType": "CATEGORICAL"
-        },
-        {
-            "attributeName": "marital",
-            "attributeType": "CATEGORICAL"
-        },
-        {
-            "attributeName": "education",
-            "attributeType": "CATEGORICAL"
-        },
-        {
-            "attributeName": "default",
-            "attributeType": "CATEGORICAL"
-        },
-        {
-            "attributeName": "housing",
-            "attributeType": "CATEGORICAL"
-        },
-        {
-            "attributeName": "loan",
-            "attributeType": "CATEGORICAL"
-        },
-        {
-            "attributeName": "contact",
-            "attributeType": "CATEGORICAL"
-        },
-        {
-            "attributeName": "month",
-            "attributeType": "CATEGORICAL"
-        },
-        {
-            "attributeName": "day_of_week",
-            "attributeType": "CATEGORICAL"
-        },
-        {
-            "attributeName": "duration",
-            "attributeType": "NUMERIC"
-        },
-        {
-            "attributeName": "campaign",
-            "attributeType": "NUMERIC"
-        },
-        {
-            "attributeName": "pdays",
-            "attributeType": "NUMERIC"
-        },
-        {
-            "attributeName": "previous",
-            "attributeType": "BINARY"
-        },
-        {
-            "attributeName": "poutcome",
-            "attributeType": "CATEGORICAL"
-        },
-        {
-            "attributeName": "emp_var_rate",
-            "attributeType": "NUMERIC"
-        },
-        {
-            "attributeName": "cons_price_idx",
-            "attributeType": "NUMERIC"
-        },
-        {
-            "attributeName": "cons_conf_idx",
-            "attributeType": "NUMERIC"
-        },
-        {
-            "attributeName": "euribor3m",
-            "attributeType": "NUMERIC"
-        },
-        {
-            "attributeName": "nr_employed",
-            "attributeType": "NUMERIC"
-        },
-        {
-            "attributeName": "y",
-            "attributeType": "BINARY"
-        }
-    ],
-    "targetAttributeName": "y"
+  "version" : "1.0",
+  "rowId" : null,
+  "rowWeight" : null,
+  "targetAttributeName" : "target",
+  "dataFormat" : "CSV",
+  "dataFileContainsHeader" : true,
+  "attributes" : [ {
+    "attributeName" : "ICD9_1Main",
+    "attributeType" : "NUMERIC"
+  }, {
+    "attributeName" : "DRG2",
+    "attributeType" : "NUMERIC"
+  }, {
+    "attributeName" : "Age",
+    "attributeType" : "NUMERIC"
+  }, {
+    "attributeName" : "DEMAdmNo",
+    "attributeType" : "BINARY"
+  }, {
+    "attributeName" : "target",
+    "attributeType" : "BINARY"
+  }, {
+    "attributeName" : "PEV_30",
+    "attributeType" : "NUMERIC"
+  }, {
+    "attributeName" : "PEV_365",
+    "attributeType" : "NUMERIC"
+  }, {
+    "attributeName" : "lhlos",
+    "attributeType" : "NUMERIC"
+  }, {
+    "attributeName" : "LTSD",
+    "attributeType" : "NUMERIC"
+  }, {
+    "attributeName" : "LNOSD",
+    "attributeType" : "NUMERIC"
+  }, {
+    "attributeName" : "comorbidity_index",
+    "attributeType" : "NUMERIC"
+  }, {
+    "attributeName" : "AdmD_3",
+    "attributeType" : "BINARY"
+  }, {
+    "attributeName" : "AdmD_7",
+    "attributeType" : "BINARY"
+  }, {
+    "attributeName" : "AdmD_8",
+    "attributeType" : "BINARY"
+  }, {
+    "attributeName" : "AdmD_9",
+    "attributeType" : "BINARY"
+  }, {
+    "attributeName" : "AdmD_11",
+    "attributeType" : "BINARY"
+  }, {
+    "attributeName" : "AdmD_13",
+    "attributeType" : "BINARY"
+  }, {
+    "attributeName" : "AdmD_14",
+    "attributeType" : "BINARY"
+  }, {
+    "attributeName" : "AdmD_15",
+    "attributeType" : "BINARY"
+  }, {
+    "attributeName" : "AdmD_16",
+    "attributeType" : "BINARY"
+  }, {
+    "attributeName" : "AdmD_18",
+    "attributeType" : "BINARY"
+  }, {
+    "attributeName" : "AdmD_20",
+    "attributeType" : "BINARY"
+  }, {
+    "attributeName" : "AdmD_21",
+    "attributeType" : "BINARY"
+  }, {
+    "attributeName" : "AdmD_22",
+    "attributeType" : "BINARY"
+  }, {
+    "attributeName" : "AdmD_23",
+    "attributeType" : "BINARY"
+  }, {
+    "attributeName" : "AdmD_26",
+    "attributeType" : "BINARY"
+  }, {
+    "attributeName" : "AdmD_27",
+    "attributeType" : "BINARY"
+  }, {
+    "attributeName" : "AdmD_28",
+    "attributeType" : "NUMERIC"
+  }, {
+    "attributeName" : "AdmD_30",
+    "attributeType" : "BINARY"
+  }, {
+    "attributeName" : "AdmD_31",
+    "attributeType" : "BINARY"
+  }, {
+    "attributeName" : "AdmD_32",
+    "attributeType" : "BINARY"
+  }, {
+    "attributeName" : "AdmD_33",
+    "attributeType" : "BINARY"
+  }, {
+    "attributeName" : "AdmD_36",
+    "attributeType" : "BINARY"
+  }, {
+    "attributeName" : "DisP_1",
+    "attributeType" : "BINARY"
+  }, {
+    "attributeName" : "DisP_2",
+    "attributeType" : "BINARY"
+  }, {
+    "attributeName" : "DisP_4",
+    "attributeType" : "BINARY"
+  }, {
+    "attributeName" : "DisP_5",
+    "attributeType" : "BINARY"
+  }, {
+    "attributeName" : "DisP_6",
+    "attributeType" : "BINARY"
+  }, {
+    "attributeName" : "DisP_7",
+    "attributeType" : "BINARY"
+  }, {
+    "attributeName" : "DisP_11",
+    "attributeType" : "BINARY"
+  }, {
+    "attributeName" : "DisP_12",
+    "attributeType" : "BINARY"
+  }, {
+    "attributeName" : "DisP_13",
+    "attributeType" : "BINARY"
+  }, {
+    "attributeName" : "DisP_14",
+    "attributeType" : "BINARY"
+  }, {
+    "attributeName" : "DisP_16",
+    "attributeType" : "BINARY"
+  }, {
+    "attributeName" : "Disc_8",
+    "attributeType" : "BINARY"
+  }, {
+    "attributeName" : "Disc_10",
+    "attributeType" : "NUMERIC"
+  }, {
+    "attributeName" : "Disc_11",
+    "attributeType" : "NUMERIC"
+  }, {
+    "attributeName" : "Disc_12",
+    "attributeType" : "BINARY"
+  }, {
+    "attributeName" : "Disc_14",
+    "attributeType" : "NUMERIC"
+  }, {
+    "attributeName" : "Disc_15",
+    "attributeType" : "BINARY"
+  }, {
+    "attributeName" : "Disc_17",
+    "attributeType" : "BINARY"
+  }, {
+    "attributeName" : "Disc_21",
+    "attributeType" : "BINARY"
+  }, {
+    "attributeName" : "Disc_22",
+    "attributeType" : "BINARY"
+  }, {
+    "attributeName" : "Disc_23",
+    "attributeType" : "NUMERIC"
+  }, {
+    "attributeName" : "Disc_24",
+    "attributeType" : "NUMERIC"
+  }, {
+    "attributeName" : "Disc_25",
+    "attributeType" : "BINARY"
+  }, {
+    "attributeName" : "Disc_26",
+    "attributeType" : "NUMERIC"
+  }, {
+    "attributeName" : "Disc_27",
+    "attributeType" : "BINARY"
+  }, {
+    "attributeName" : "Disc_28",
+    "attributeType" : "BINARY"
+  }, {
+    "attributeName" : "Disc_29",
+    "attributeType" : "BINARY"
+  } ],
+  "excludedAttributeNames" : [ ]
 }

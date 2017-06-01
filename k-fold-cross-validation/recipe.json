@@ -1,8 +1,8 @@
 {
-  "outputs": [
-    "ALL_BINARY",
-    "ALL_CATEGORICAL",
-    "quantile_bin(ALL_NUMERIC,50)",
-    "lowercase(ALL_TEXT)"
-  ]
+  "groups" : {
+    "NUMERIC_VARS_QB_100" : "group('PEV_30')",
+    "NUMERIC_VARS_QB_10" : "group('comorbidity_index','PEV_365','LNOSD','AdmD_28','lhlos','DRG2','Disc_26','ICD9_1Main','LTSD','Disc_14','Disc_24','Disc_23','Disc_11','Age','Disc_10')"
+  },
+  "assignments" : { },
+  "outputs" : [ "ALL_BINARY", "quantile_bin(NUMERIC_VARS_QB_100,100)", "quantile_bin(NUMERIC_VARS_QB_10,10)" ]
 }
